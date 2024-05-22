@@ -5,7 +5,7 @@ function* workGetCatsFetch() {
 	const cats = yield call(() => fetch('https://api.thecatapi.com/v1/breeds'));
 
 	const formattedCats = yield cats.json();
-	const formattedCatsShortned = formattedCats.slice(0, 50);
+	const formattedCatsShortned = formattedCats.slice(0, 10);
 	yield put(getCatsSucess(formattedCatsShortned));
 }
 

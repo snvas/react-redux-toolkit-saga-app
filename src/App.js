@@ -28,7 +28,10 @@ function App() {
 						<div className="column column-right">
 							<h2>{cat.name}</h2>
 							<h5>Temperament: {cat.temperament}</h5>
+							<h5>Origin: {cat.origin}</h5>
+							<h5>Avg. Life Time: {cat.life_span}</h5>
 							<p>{cat.description}</p>
+							<a href={cat.wikipedia_url}>Wikipedia</a>
 						</div>
 					</div>
 				)}
