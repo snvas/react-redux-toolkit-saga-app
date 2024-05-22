@@ -16,8 +16,8 @@ function App() {
 
 	return (
 		<div className="App">
-			<h1>CAT SPECIES GALLERY</h1>
-			<p>Images of cats</p>
+			<h1>CAT SPECIES</h1>
+			<p>Types of cats</p>
 			<hr />
 			<div className="Gallery">
 				{cats.map(cat =>
